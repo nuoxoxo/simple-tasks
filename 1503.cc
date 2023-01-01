@@ -1,18 +1,12 @@
 #include "iostream"
 #include "set"
-#include "tuple"
 #include "vector"
-
-using	namespace std;
-
-#define tii tuple<int,int>
 
 int	main()
 {
 	std::string s;
 	std::cin >> s;
-	// vector<vector<int>> V{{-1, 0}, {1, 0}, {0, 1},{0, -1}};
-	set<vector<int>> S{{0, 0}};
+	std::set<std::vector<int>> S{{0, 0}};
 	int x = 0, y = 0;
 	for (char & c: s)
 	{
@@ -54,6 +48,6 @@ int	main()
 		i += 2;
 	}
 	int res2 = S.size();
-	cout << res << endl;
-	cout << res2 << endl;
+	std::cout << res << std::endl;
+	std::cout << res2 << std::endl;
 }
