@@ -15,8 +15,10 @@ int	main()
 		sscanf(L.c_str(), "%d-%d", & lo, & hi);
 		c = M[0];
 		// std::cout << lo << ' ' << hi << ' ' << c << ' ' << R << std::endl;
-		if (f(lo, hi, c, R)) ++res;
-		if (ff(lo-1, hi-1, c, R)) ++res2;
+		if (f(lo, hi, c, R))
+			++res;
+		if (ff(lo-1, hi-1, c, R))
+			++res2;
 	}
 	std::cout << res << std::endl;
 	std::cout << res2 << std::endl;
