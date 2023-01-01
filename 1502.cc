@@ -1,5 +1,6 @@
 #include "iostream"
 #include "cstdio"
+#include "cassert"
 
 using	namespace std;
 
@@ -19,7 +20,11 @@ int	main()
 		int bow = (a + b + c - m3(a, b, c,1)) * 2;
 		res2 += wp + bow;
 	}
-	cout << res << '\n' << res2 << endl;
+	cout << res << '\n';
+	cout << res2 << '\n';
+	assert (res == 1586300);
+	assert (res2 == 3737498);
+
 }
 
 int	m3(int a, int b, int c, int mode)
