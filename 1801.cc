@@ -16,11 +16,9 @@ int	main()
 	std::cout << res << std::endl;
 	int i = 0, count = 0;
 	res = 0;
-
 	M[0] = 1;
 	while (1)
 	{
-		// std::cout << i << ' ' << A[i] << ' ' << res << std::endl;
 		res += A[i];
 		++M[res];
 		if (M[res] == 2)

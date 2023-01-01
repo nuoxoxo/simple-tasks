@@ -5,7 +5,8 @@ int	main()
 {
 	std::vector<int> v;
 	int n, res = 0;
-	while (std::cin >> n) v.push_back(n);
+	while (std::cin >> n)
+		v.push_back(n);
 	for (int a: v)
 	{
 		for (int b: v)
