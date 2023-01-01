@@ -1,4 +1,4 @@
-s = open('_inputs_/1503.0').read().strip()
+s = open('_inputs_/1503.1').read().strip()
 x = 0
 y = 0
 S = {(x, y)}

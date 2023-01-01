@@ -11,7 +11,6 @@ int	main()
 		while (temp > 0)
 		{
 			res2 += temp;
-			// std::cout << temp << std::endl;
 			temp = temp / 3 - 2;
 		}
 	}

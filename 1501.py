@@ -1,4 +1,4 @@
-file = open('_inputs_/1501.0')
+file = open('_inputs_/1501.1')
 line = file.read().strip()
 res = 0
 for c in line:

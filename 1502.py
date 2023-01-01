@@ -1,4 +1,4 @@
-file = open('_inputs_/1502.0')
+file = open('_inputs_/1502.1')
 a = []
 for line in file:
     a.append([int(_) for _ in line.strip().split('x')])
