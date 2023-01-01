@@ -1,4 +1,4 @@
-file = open('_inputs_/1502.1')
+file = open('_inputs_/1502.0')
 a = []
 for line in file:
     a.append([int(_) for _ in line.strip().split('x')])
@@ -14,3 +14,5 @@ for l, w, h in a:
     wp = (l + w + h - max(l, w, h)) * 2
     res2 += bow + wp
 print(res2)
+assert res == 1586300
+assert res2 == 3737498
