@@ -11,9 +11,7 @@ int	main()
 			res += n;
 			continue ;
 		}
-		if (n % 3 == 0)
-			res += n;
-		if (n % 5 == 0)
+		if (n % 3 == 0 || n % 5 == 0)
 			res += n;
 	}
 	std::cout << res;
