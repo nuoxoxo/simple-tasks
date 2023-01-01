@@ -1,4 +1,4 @@
-file = open('_inputs_/1501.1')
+file = open('_inputs_/1501.0')
 line = file.read().strip()
 res = 0
 for c in line:
@@ -16,4 +16,5 @@ for i in range(len(line)):
         count += 1 
     else:
         count -= 1
-print(res, res2)
+print(res)
+print(res2)
