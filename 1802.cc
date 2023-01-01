@@ -26,10 +26,11 @@ int	main()
 			++c3;
 		a.push_back(s);
 	}
+	int res = c2 * c3;
+	std::string res2;
 	i = -1;
 	int j, k;
 	int len = a[0].length();
-	std::string res;
 	while (++i < len)
 	{
 		j = -1;
@@ -46,13 +47,14 @@ int	main()
 				R = a[k].substr(0, i) + a[k].substr(i + 1, len - 1 - i);
 				if (L == R)
 				{
-					res = L;
+					res2 = L;
 					break ;
 				}
 			}
 		}
 	}
-	std::cout << c2 * c3 << '\n';
 	std::cout << res << '\n';
-	assert (res == "aixwcbzrmdvpsjfgllthdyoqe");
+	std::cout << res2 << '\n';
+	assert (res == 6972);
+	assert (res2 == "aixwcbzrmdvpsjfgllthdyoqe");
 }
