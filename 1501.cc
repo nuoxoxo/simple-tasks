@@ -1,10 +1,10 @@
 #include "iostream"
+#include "cassert"
 
 int	main()
 {
 	std::string s;
 	std::cin >> s;
-	std::cout << s.length() << std::endl;
 	int flr = 0;
 	int i = -1;
 	while (++i < s.length())
@@ -27,4 +27,6 @@ int	main()
 	}
 	std::cout << flr << '\n';
 	std::cout << i << '\n';
+	assert (flr == 74);
+	assert (i == 1795);
 }

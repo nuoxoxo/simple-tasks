@@ -1,6 +1,7 @@
 #include "iostream"
 #include "set"
 #include "vector"
+#include "cassert"
 
 int	main()
 {
@@ -50,4 +51,5 @@ int	main()
 	int res2 = S.size();
 	std::cout << res << std::endl;
 	std::cout << res2 << std::endl;
+	assert (res == 2565 && res2 == 2639);
 }
