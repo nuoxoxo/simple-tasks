@@ -1,7 +1,6 @@
 #include "iostream"
 #include "set"
 #include "vector"
-#include "cassert"
 
 int	main()
 {
