@@ -1,5 +1,5 @@
 let fs = require('fs')
-let input = fs.readFileSync('_inputs_/1501.0').toString().trim().split('')
+let input = fs.readFileSync('_inputs_/1501.1').toString().trim().split('')
 let res = input.reduce((floor, c) => c == '(' ? ++floor : --floor, 0)
 let floor = 0
 
