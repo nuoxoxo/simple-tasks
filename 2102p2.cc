@@ -1,5 +1,4 @@
 #include "iostream"
-
 #include "vector"
 #include "sstream"
 
@@ -24,6 +23,5 @@ int	main()
 			aim += n;
 		}
 	}
-	std::cout << H << ' ' << D << std::endl;
-	std::cout << "result: " << H*D << std::endl;
+	std::cout << "result: " << H * D << std::endl;
 }
