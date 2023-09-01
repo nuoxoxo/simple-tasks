@@ -1,8 +1,6 @@
 .DS_Store
 Thumbs.db
 
-*input*
-
 *.out
 *.swp
 *.swo
