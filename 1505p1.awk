@@ -1,4 +1,4 @@
-awk '{
+{
 
     #res = 0
     vowels = 0
@@ -30,4 +30,4 @@ awk '{
     }
 } END {
     print "part 1: " res
-}' 05.0
+}
