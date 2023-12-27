@@ -6,4 +6,5 @@
 !*.go
 !*.md
 !*.sh
+!*.awk
 !Makefile
