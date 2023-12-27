@@ -17,11 +17,7 @@ awk '{
     curr = 0
     for (i = 1; i <= length(str); i++) {
         char = substr(str, i, 1)
-        if (char == "(") {
-            curr += 1
-        } else {
-            curr -= 1
-        }
+        curr += (char == "(") ? 1 : -1
         if (curr == -1) {
             res2 = i
             break
