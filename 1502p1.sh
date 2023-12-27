@@ -14,19 +14,16 @@ while IFS= read -r line; do
     ### way 2 : avoid sorting
     min1=$l
     min2=$w
-    if [ "$w" -lt "$l" ]; then
-        min1=$w
-        min2=$l
-    fi
+    [ "$w" -lt "$l" ] && { min1=$w; min2=$l; }
     if [ "$h" -lt "$min1" ]; then
         min2=$min1
         min1=$h
     elif [ "$h" -lt "$min2" ]; then
         min2=$h
     fi
-    side=$(($min1*$min2))
-    temp=$((2*$l*$w + 2*$w*$h + 2*$h*$l + $side))
-    res=$(($temp+$res))
+    side=$(( $min1 * $min2 ))
+    temp=$(( 2 * $l * $w + 2 * $w * $h + 2 * $h * $l + $side ))
+    res=$(( $temp + $res ))
 done
 
 echo "part 1: $res"
