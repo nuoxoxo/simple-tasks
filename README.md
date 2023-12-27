@@ -8,6 +8,10 @@
 2      |   @ß  |      |      |      |      |      |      |      |      |
 3      |       |      |      |      |      |      |      |      |      |
 
+# 2O15 day 3 - 
+we have one single line like:
+> ^^<<v<<v><
+
 # 2O15 day 2 - Math
 we have lines like this (to be sep by 'x'):
 > 2x3x4 \
