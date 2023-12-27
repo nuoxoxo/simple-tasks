@@ -85,7 +85,7 @@ echo "part 2: $res2"
 ```
 
 # 2O15 day 1 - Lisp
-we have one long string: 
+we have one long line: 
 > )())())
 ```awk
 # gsub - global substitute will return the total matches which is good enough for p1  
