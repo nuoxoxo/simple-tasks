@@ -8,7 +8,7 @@
 2      |   @ß  |      |      |      |      |      |      |      |      |
 3      |       |      |      |      |      |      |      |      |      |
 
-# 15-2
+# 2O15 day 2 - Math
 we have lines like this (to be sep by 'x'):
 > 2x3x4 \
 > 1x1x10
@@ -80,7 +80,7 @@ echo "part 1: $res1"
 echo "part 2: $res2"
 ```
 
-# 15-1
+# 2O15 day 1 - Lisp
 we have one long string: 
 > )())())
 ```awk
