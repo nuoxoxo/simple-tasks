@@ -8,11 +8,11 @@ maxOf3 () {
     local c=$3
     local res=$a
     if [ $part -eq 2 ]; then # part 2
-        if [ $b -gt $res ]; then res=$b; fi
-        if [ $c -gt $res ]; then res=$c; fi
+        [ $b -gt $res ] && res=$b
+        [ $c -gt $res ] && res=$c
     elif [ $part -eq 1 ]; then # part 1
-        if [ $b -lt $res ]; then res=$b; fi
-        if [ $c -lt $res ]; then res=$c; fi
+        [ $b -lt $res ] && res=$b
+        [ $c -lt $res ] && res=$c
     fi
     echo $res
 }
@@ -28,12 +28,12 @@ while IFS= read -r line; do
     w="${D[1]}"
     h="${D[2]}"
 
-    temp=$(maxOf3 $(($l*$w)) $(($w*$h)) $(($h*$l)) 1)
-    temp=$(($temp + 2*$l*$w + 2*$w*$h + 2*$h*$l))
+    temp=$(maxOf3 $(( $l * $w )) $(( $w * $h )) $(( $h * $l )) 1)
+    temp=$(($temp + 2 * $l * $w + 2 * $w * $h + 2 * $h * $l))
     res1=$((res1 + temp))
 
-    wrap=$(( $(($(($w+$l+$h)) - $(maxOf3 $l $w $h 2))) * 2 ))
-    bow=$(($w*$l*$h))
+    wrap=$(( $(( $(($w + $l + $h)) - $(maxOf3 $l $w $h 2) )) * 2 ))
+    bow=$(($w * $l * $h))
     res2=$((res2 + wrap + bow))
 
 done
