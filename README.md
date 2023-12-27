@@ -8,12 +8,12 @@
 2      |   @ß  |      |      |      |      |      |      |      |      |
 3      |       |      |      |      |      |      |      |      |      |
 
-# 2O15 day 3 - 
+# 2O15 day 3 - Houses
 we have one single line like:
 > ^^<<v<<v><
 
 # 2O15 day 2 - Math
-we have lines like this (to be sep by 'x'):
+we have a bunch of lines like this (to be sep by 'x'):
 > 2x3x4 \
 > 1x1x10
 ```awk
@@ -85,7 +85,7 @@ echo "part 2: $res2"
 ```
 
 # 2O15 day 1 - Lisp
-we have one long string: 
+we have one long line: 
 > )())())
 ```awk
 # gsub - global substitute will return the total matches which is good enough for p1  
