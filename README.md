@@ -13,6 +13,9 @@ we have lines like this (to be sep by 'x'):
 > 2x3x4 \
 > 1x1x10
 ```awk
+# 1 - awk reads the input line by line, separating each line by a 'x'
+# 2 - we get 3 variables ${1|2|3}, assigning them to an array `D`
+# 3 - sort the array
 awk -F "x" '{
     # part 1
     D[0] = $1;
@@ -35,9 +38,13 @@ awk -F "x" '{
 } END { \
     print "part 1: " res ;
     print "par2 2: " res2; 
-}' 02.0
+}' input
 ```
 ```bash
+# 1 - we read line by line using a while...do loop, `IFS=` means no sep 
+# 2 - chop each line w/ `IFS="x"`, sending all elems to an array D `-a D`
+# 3 - define a function - we define the func's params w/ keyword `local`
+
 #!/bin/bash
 
 maxOf3 () {
@@ -77,21 +84,16 @@ echo "part 2: $res2"
 we have one long string: 
 > )())())
 ```awk
+# gsub - global substitute will return the total matches which is good enough for p1  
+
 awk '{
-    str = $0 # READ one long string
-    res = 0
-    for (i = 1; i <= length(str); i++) { # strlen: length(str)
-        char = substr(str, i, 1)
-        if (char == "(") {
-            res += 1
-        } else {
-            res -= 1
-        }
-    }
+    res = gsub( /\(/, "", $0 ) - gsub( /\)/, "", $0 )
     print "part 1: " res
-}' input.in
+}' 01.0
 ```
 ```bash
+# for bash grep + wl will give us the total occurrence of a char 
+
 #!/bin/sh
 
 IFS= read -r line # READ one long string w/o sep "IFS=" and ended w/ a carriage return
