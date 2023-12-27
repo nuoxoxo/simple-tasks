@@ -15,6 +15,5 @@ awk -F "x" \
         res += 2 * D[1] * D[2] + 2 * D[1] * D[3] + 2 * D[2] * D[3] + D[1] * D[2];
     } \
     END {
-        print res;
+        print "part 1: " res;
     }' 02.0
-
