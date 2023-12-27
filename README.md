@@ -8,7 +8,7 @@
 2      |   @ß  |      |      |      |      |      |      |      |      |
 3      |       |      |      |      |      |      |      |      |      |
 
-# 2O15 day 3 - 
+# 2O15 day 3 - Houses
 we have one single line like:
 > ^^<<v<<v><
 
