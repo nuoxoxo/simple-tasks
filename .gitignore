@@ -8,4 +8,5 @@
 !*.sh
 !*.awk
 !Makefile
+!*------*
 tuto
