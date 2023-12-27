@@ -10,15 +10,8 @@ res=-1
 
 for ((i = 0; i < ${#line}; i++)); do
     char="${line:$i:1}"
-    if [ "$char" = "(" ]; then
-        P=$((P + 1))
-    else
-        P=$((P - 1))
-    fi
-    if [ $P -eq -1 ]; then
-        res=$((i + 1))
-        break
-    fi
+    [ "$char" = "(" ] && P=$((P + 1)) || P=$((P - 1))
+    [ $P -eq -1 ] && { res=$((i + 1)); break; }
 done
 
 echo "part 2: $res"
