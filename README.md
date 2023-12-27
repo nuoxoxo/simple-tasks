@@ -10,6 +10,13 @@
 4      |     |   |   |   |   |   |   |   |   |
 5      | @   |   |   |   |   |   |   |   |   |
 
+# Running an AWK script
+```
+$ sh 1502p1.sh < 02.0
+OR
+$ awk -f 1505.awk < 05.0
+```
+
 # 2O15 day 3 - Houses
 we have one single line like:
 > ^^<<v<<v><
