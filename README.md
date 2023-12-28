@@ -18,9 +18,9 @@
 ```
 example
 
-$ sh 1502p1.sh < 02.0
+$ sh solver.sh < infile
 OR
-$ awk -f 1505.awk < 05.0
+$ awk -f solver.awk < infile
 ```
 
 # 2O15 day 5 - Nice 
