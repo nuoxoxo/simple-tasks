@@ -14,6 +14,8 @@
 
 # Running an AWK script
 ```
+example
+
 $ sh 1502p1.sh < 02.0
 OR
 $ awk -f 1505.awk < 05.0
@@ -22,6 +24,7 @@ $ awk -f 1505.awk < 05.0
 # 2O15 day 4 - MD5
 Run:
 ```
+well naturally
 $ c++ 1504.cc && ./a.out $(cat infile)
 ```
 
