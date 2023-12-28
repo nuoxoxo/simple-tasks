@@ -23,6 +23,9 @@ OR
 $ awk -f 1505.awk < 05.0
 ```
 
+# 2O15 day 5 - Nice 
+_trivial_
+
 # 2O15 day 4 - MD5
 Run:
 ```
