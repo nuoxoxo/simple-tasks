@@ -19,6 +19,12 @@ OR
 $ awk -f 1505.awk < 05.0
 ```
 
+# 2O15 day 4 - MD5
+Run:
+```
+$ c++ 1504.cc && ./a.out $(cat infile)
+```
+
 # 2O15 day 3 - Houses
 we have one single line like:
 > ^^<<v<<v><
