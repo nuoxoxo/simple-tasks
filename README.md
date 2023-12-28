@@ -1,3 +1,5 @@
+<details><summary>Notes</summary>
+
 # Curr
 
 ▨      |  5  | 6 | 7 | 8 | 9 | 0 | 1 | 2 | 3 |
@@ -128,3 +130,5 @@ R=$(echo "$line" | grep -o ")" | wc -l)
 res=$((L-R))
 echo "part 1: $res"
 ```
+
+</details>
