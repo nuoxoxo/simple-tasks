@@ -11,12 +11,15 @@
 5      | @   |   |   |   |   |   |   |   |   |
 
 # Running an AWK script
-```
-$ sh solver.awk < infile
-OR
-$ awk -f solver.awk < infile
-OR
-$ chmod +x solver.awk && ./solver.awk < infile 
+```py
+$ sh filename.awk < infile
+# form: awk '{...}'
+
+$ awk -f filename.awk < infile
+# form: {...}
+
+$ chmod +x filename.awk && ./filename.awk < infile
+# those with header: #!/usr/bin/awk -f 
 ```
 
 # 2O15 day 5 - Nice 
