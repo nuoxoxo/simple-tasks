@@ -10,10 +10,6 @@
 4      | ¢   |   |   |   |   |   |   |   |   |
 5      | @   |   |   |   |   |   |   |   |   |
 
-<kbd>@ : AWK</kbd> \
-<kbd>ß : Bash</kbd> \
-<kbd>¢ : C++</kbd>
-
 # Running an AWK script
 ```
 example
