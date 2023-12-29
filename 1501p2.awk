@@ -1,4 +1,10 @@
-awk '{
+#!/usr/bin/awk -f 
+
+{
+
+    # part 1
+
+    # res = gsub( /\(/, "", $0 ) - gsub( /\)/, "", $0 )
 
     str = $0
     res = 0
@@ -26,4 +32,4 @@ awk '{
 
     print "part 1: " res
     print "part 2: " res2
-}' 01.0
+}
