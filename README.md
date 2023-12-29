@@ -12,11 +12,11 @@
 
 # Running an AWK script
 ```
-example
-
-$ sh solver.sh < infile
+$ sh solver.awk < infile
 OR
 $ awk -f solver.awk < infile
+OR
+$ chmod +x solver.awk && ./solver.awk < infile 
 ```
 
 # 2O15 day 5 - Nice 
