@@ -9,7 +9,7 @@
 3      | @   |   |   |   |   |   |   |   |   |
 4      | ¢   |   |   |   |   |   |   |   |   |
 5      | @ß  |   |   |   |   |   |   |   |   |
-5      |     |   |   |   |   |   |   |   |   |
+6      |     |   |   |   |   |   |   |   |   |
 
 # Running an AWK script
 ```py
@@ -29,8 +29,11 @@ trivial
 # 2O15 day 4 - MD5
 Run:
 ```
-well naturally
 $ c++ 1504.cc && ./a.out $(cat infile)
+```
+Attempting Bash: Using `md5sum` :star2:
+```sh
+$ md5sum --version
 ```
 
 # 2O15 day 3 - Houses
