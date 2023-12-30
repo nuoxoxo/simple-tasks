@@ -27,24 +27,24 @@ $ chmod +x filename.awk && ./filename.awk < infile
 - learning Bash_RegexMatch (BASH_REMATCH)
 
 # 2O15 day 5 - Nice 
-trivial 
+- trivial 
 
 # 2O15 day 4 - MD5
 - Run:
 ```
 $ c++ 1504.cc && ./a.out $(cat infile)
 ```
-Attempting Bash: Using `md5sum` :star2:
+- Attempting Bash: Using `md5sum` :star2:
 ```sh
 $ md5sum --version
 ```
 
 # 2O15 day 3 - Houses
-we have one single line like:
+- we have one single line like:
 > ^^<<v<<v><
 
 # 2O15 day 2 - Math
-we have a bunch of lines like this (to be sep by 'x'):
+- we have a bunch of lines like this (to be sep by 'x'):
 > 2x3x4 \
 > 1x1x10
 ```awk
