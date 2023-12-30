@@ -1,12 +1,9 @@
 *
 !.env.sample
 !*.cc
-!*.py
-!*.ts
-!*.go
 !*.md
 !*.sh
 !*.awk
+!*p1
+!*p2
 !Makefile
-!*------*
-tuto
