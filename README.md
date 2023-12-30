@@ -23,11 +23,14 @@ $ chmod +x filename.awk && ./filename.awk < infile
 # those with header: #!/usr/bin/awk -f 
 ```
 
+# 2O15 day 6 - Probably (Grid problem)
+- learning Bash_RegexMatch (BASH_REMATCH)
+
 # 2O15 day 5 - Nice 
 trivial 
 
 # 2O15 day 4 - MD5
-Run:
+- Run:
 ```
 $ c++ 1504.cc && ./a.out $(cat infile)
 ```
