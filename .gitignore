@@ -4,4 +4,6 @@
 !*.md
 !*.sh
 !*.awk
+!*p1
+!*p2
 !Makefile
