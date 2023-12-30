@@ -6,7 +6,7 @@ while IFS= read -r line; do
 
     [[ "$line" =~ $regex ]]
     # check if line matches (=~)
-    # on success all Captured Groups are sent to BASH_REMATCH array
+    # on success all groups captured are sent to BASH_REMATCH array
 
     echo "[0]( group 0 )/ ${BASH_REMATCH[0]}"
     echo "[1]( command )/ ${BASH_REMATCH[1]}"
