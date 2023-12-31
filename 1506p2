@@ -1,0 +1,49 @@
+#!/bin/bash
+
+regex="(.*) ([0-9]+),([0-9]+) through ([0-9]+),([0-9]+)"
+
+#A=()
+
+declare -i A
+
+while IFS= read -r line; do
+
+    [[ "$line" =~ $regex ]]
+
+    # check if line matches (=~)
+    # on success all groups captured are sent to BASH_REMATCH
+
+    nwords=$(echo "${BASH_REMATCH[1]}" | awk '{print NF}')
+    [ $nwords -eq 1 ] && CMD="${BASH_REMATCH[1]}"
+    [ $nwords -eq 2 ] && CMD=$(echo "${BASH_REMATCH[1]}" | awk '{print $2}')
+
+    echo "[0]( group 0 )/ ${BASH_REMATCH[0]}"
+    echo "[1]( command )/ $CMD"
+    echo "[2,3]( sr,sc )/ ${BASH_REMATCH[2]} ${BASH_REMATCH[3]}"
+    echo "[4,5]( er,ec )/ ${BASH_REMATCH[4]} ${BASH_REMATCH[5]}"
+    echo ""
+
+    sr="${BASH_REMATCH[2]}"
+    sc="${BASH_REMATCH[3]}"
+    er="${BASH_REMATCH[4]}"
+    ec="${BASH_REMATCH[5]}"
+
+    for (( c = sc; c < ec + 1; c++ )); do
+        for (( r = sr; r < er + 1; r++ )); do
+            #echo "$r,$c"
+            case "$CMD" in
+                'toggle')   ((A[$r,$c] += 2)) ;;
+                'on')       ((A[$r,$c] += 1)) ;; #curr='|' ;;
+                'off')      [[ ${A[$r,$c]} > 0 ]] && (( A[$r,$c]-- )) ;;#curr='-' ;;
+            esac
+            #A[r]="${A[r]:0:$c}$curr${A[r]:((c+1))}"
+        done
+    done
+done
+
+res=0
+for bn in "${A[@]}"; do
+    res=$((res + bn))
+done
+echo "end/ $res"
+
