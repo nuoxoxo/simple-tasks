@@ -1,4 +1,7 @@
 *
+!aoc_*
+!awk_*
+!bash_*
 !.env.sample
 !*.cc
 !*.md
